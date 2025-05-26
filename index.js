@@ -34,9 +34,13 @@ app.get("/", async(req, res) =>{
     res.status(200).json("Welcome To My First Deployed Backend Project")
 })
 
-app.use(routes)
+app.use("/api", routes)
 
 
+
+// Incase there will be different version of the app
+// app.use("/api/v1", routes)
+// app.use("/api/v2", routes)
 // login
 
 // forgotten Password
