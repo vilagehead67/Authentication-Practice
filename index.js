@@ -30,6 +30,9 @@ app.listen(PORT, () =>{
 
 })
 
+app.get("/", async(req, res) =>{
+    res.status(200).json("Welcome To My First Deployed Backend Project")
+})
 
 app.use(routes)
 
@@ -46,6 +49,8 @@ app.use(routes)
 
 // Deployment
 // using render
+
+//https://authentication-practice-payg.onrender.com
 
 
 
